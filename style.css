@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #007bff; /* Warna biru untuk header aplikasi */
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+/* Tombol Tambah Data */
+.btn-tambah {
+    background-color: #28a745; /* Hijau */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-tambah:hover {
+    background-color: #218838;
+}
+
+/* Pencarian */
+.search-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-section form {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Agar input dan tombol menyatu */
+}
+
+.search-section input[type="text"] {
+    padding: 10px;
+    border: none;
+    flex-grow: 1;
+    font-size: 1em;
+}
+
+.btn-cari {
+    background-color: #007bff; /* Biru */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-cari:hover {
+    background-color: #0056b3;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table thead th {
+    background-color: #007bff; /* Header tabel biru */
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Kolom Aksi */
+.aksi {
+    text-align: center;
+    width: 80px; /* Lebar kolom aksi */
+}
+
+.aksi a {
+    margin: 0 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.aksi-edit {
+    color: #ffc107; /* Kuning/Edit */
+}
+
+.aksi-hapus {
+    color: #dc3545; /* Merah/Hapus */
+}
