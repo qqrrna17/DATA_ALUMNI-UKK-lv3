@@ -1,3 +1,4 @@
+<?php include 'koneksi.php'; ?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -21,10 +22,14 @@
 
         <label for="tahun_lulus">Tahun Lulus:</label>
         <input type="number" id="tahun_lulus" name="tahun_lulus" required min="1900" max="<?php echo date('Y'); ?>">
+        <select name="jurusan" required>
+    <option value="">Jurusan</option>
+    <option value="RPL">RPL</option>
+    <option value="TKJ">TKJ</option>
+    <option value="TJAT">TJAT</option>
+    <option value="ANIMASI">ANIMASI</option>
+    </select>
         
-        <label for="jurusan">Jurusan:</label>
-        <input type="text" id="jurusan" name="jurusan" required>
-
         <label for="pekerjaan">Pekerjaan:</label>
         <input type="text" id="pekerjaan" name="pekerjaan">
 
